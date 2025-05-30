@@ -128,5 +128,10 @@ namespace Personal_Expense_Tracker
             regform.Show();
             this.Hide();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -21,5 +21,31 @@ namespace Personal_Expense_Tracker
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form Tracker = new Tracker();
+            Tracker.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form goalTracker = new GoalTracker();
+            goalTracker.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Form subtracker = new SubscriptionTracker();
+            subtracker.Show();
+        }
+
+        private void btnViewTransactions_Click(object sender, EventArgs e)
+        {
+            // Open Transaction History Form
+            this.Hide();  // Hide this form
+            TransactionHistoryForm historyForm = new TransactionHistoryForm();
+            historyForm.Show();  // Show the transaction history form
+        }
     }
 }
